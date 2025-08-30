@@ -3,17 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vipnunes - HTML Tester</title>
-<link rel="icon" href="https://vipnunes.run.place/img/pfp.html" type="image/x-icon">
+<title>otavio.top/html - HTML Tester</title>
+<link rel="icon" href="https://otavionm.github.io/favicon.ico" type="image/x-icon">
 <style>
   body {
+    background-color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+ h2 {
+    color: #fff;
   }
 
   header {
-    background-color: #000000;
+    background-color: #555;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -48,9 +52,9 @@
   button {
     display: block;
     margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: white;
+    padding: 10px 100px;
+    background-color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
   }
@@ -69,14 +73,14 @@
 </head>
 <body>
   <header>
-    <h1>Vipnunes' HTML Tester</h1>
+    <h1>otavio.top/html - HTML Tester</h1>
   </header>
   <main>
     <section id="editor">
       <h2>Editor</h2>
       <textarea id="html-input" placeholder="Paste or Type a HTML code here"></textarea>
       <button onclick="updatePreview()">Run HTML</button>
-    </section>
+    </section></main><main>
     <section id="preview">
       <h2>Visualization</h2>
       <iframe id="preview-frame"></iframe>
@@ -90,5 +94,4 @@
       previewFrame.contentDocument.documentElement.innerHTML = htmlCode;
     }
   </script>
-</body>
 </html>
